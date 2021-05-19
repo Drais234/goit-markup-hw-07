@@ -1,0 +1,65 @@
+
+.logo-box {
+  width: 1200px;
+  margin: 0px auto;
+  padding: 0px 0px;
+}
+
+.duty-logo {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 94px;
+  list-style: none;
+
+  &__item {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    background-color: var(--background-color-2);
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+
+    &:hover,
+    &:focus {
+      border-color: var(--main-color);
+    }
+  }
+
+  &__svg {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.advantage {
+  width: 1200px;
+  margin: 0px auto;
+  padding: 0px 0px;
+}
+
+.our-advantage-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+
+  &__item {
+    width: 270px;
+  }
+
+  &__feature {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-top: 30px;
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 1.174;
+    letter-spacing: 0.03em;
+    color: var(--text-color-2);
+  }
+}

@@ -1,0 +1,70 @@
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+
+  &__list {
+    border: 1px solid #eeeeee;
+    margin-bottom: 30px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
+
+      box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    }
+  }
+
+  &__img {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__name {
+    width: 322px;
+    height: 30px;
+    padding: 20px 24px 4px 24px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+  }
+
+  &__branch {
+    width: 322px;
+    height: 30px;
+    padding: 0px 24px 20px 24px;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.03em;
+    color: var(--text-color-2);
+  }
+}
+
+.project__img:hover .overlay {
+  transform: translateY(0);
+}
+
+.overlay {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(33, 150, 243, 0.9);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  padding: 49px 45px 49px 24px;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
